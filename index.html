@@ -1,2 +1,49 @@
-<a href="juanzeng.html">捐赠</a>
-<a href="suijitupian.html">随机图片</a>
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>WebCat</title>
+  </head>
+  <body style="background-color:grey">	
+	<!-- 侧栏 -->
+			<div class="nav-right" ref="navRight">
+				<div class="nav-top">
+					<button type="button" class="btn btn-primary btn-sm hiddenBtn" style="line-height: 10px;" @click="isShowLeft">
+						<i class="fas fa-expand-alt" style="font-size: 16px; margin-right:0px; "></i>
+					</button>
+					<!-- <button type="button" class="btn btn-primary btn-sm showBtn" style="line-height: 10px; display: none;" onclick="showNavRight">
+						<i class="bx bx-expand" style="font-size: 16px;"></i>
+					</button> -->
+				</div>
+				<div class="content-page" ref="cPage">	
+					<iframe id="iframe" name="iframe" width="100%" height="1000" frameborder="1000" src="https://mirlkoi.ifast3.vipnps.vip/Tag/Random/index.php"></iframe><!-- 主页打开默认地址 -->
+				</div>
+			</div>
+		</div>
+<div class="container wide" style="/*position: fixed;*/bottom: 0px;">
+					<section class="wide-left">
+						<p>已运行：<span class="brand" id="runtime"></span></p>					
+							    <script type="text/javascript">
+							        function show_runtime(){
+							            window.setTimeout("show_runtime()",1000);
+							            X=new Date("2022/10/2 0:50:0");
+							            Y=new Date();
+							            T=(Y.getTime()-X.getTime());
+							            M=24*60*60*1000;
+							            a=T/M;
+							            A=Math.floor(a);
+							            b=(a-A)*24;
+							            B=Math.floor(b);
+							            c=(b-B)*60;
+							            C=Math.floor((b-B)*60);
+							            D=Math.floor((c-C)*60);
+							            runtime.innerHTML=A+"天"+B+"小时"+C+"分"+D+"秒"
+							        }show_runtime();
+							    </script>
+				</div>
+
+
+
+			</div> 
+  </body>
+</html>
